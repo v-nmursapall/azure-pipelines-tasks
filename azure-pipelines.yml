@@ -5,8 +5,6 @@
 
 trigger: none
 
-pool: Default
-
 steps:
 - task: DownloadGitHubNugetPackage@1
   inputs:
