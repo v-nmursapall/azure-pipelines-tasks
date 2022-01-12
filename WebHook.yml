@@ -12,3 +12,4 @@ stages:
         - task: CmdLine@2
           inputs:
             script: echo $(resources.triggeringCategory) $(resources.triggeringAlias)
+            
