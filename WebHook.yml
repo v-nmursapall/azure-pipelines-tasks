@@ -8,7 +8,7 @@ stages:
   jobs:
   - job: job1
     steps:
-  Settings
+  Settings :
   - task: CmdLine@2
     inputs:
       script: echo $(resources.triggeringCategory) $(resources.triggeringAlias)
