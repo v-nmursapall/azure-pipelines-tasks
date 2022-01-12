@@ -3,7 +3,7 @@ resources:
     - webhook: NamTestWebhook          ### Webhook alias
       connection: TestIncomingWebhook    ### Incoming webhook service connection
       filters:
-        - path: azure-pipelines-tasks      ### JSON path in the payload
+        - path: v-nmursapall/azure-pipelines-tasks      ### JSON path in the payload
           value: maven-releases     ### Expected value in the path provided
         - path: action
           value: CREATED
@@ -13,5 +13,5 @@ steps:
     targetType: 'inline'
     ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
     script: |
-      Write-Host ${{ parameters.NamTestWebhook.azure-pipelines-tasks}}
+      Write-Host ${{ parameters.NamTestWebhook.v-nmursapall/azure-pipelines-tasks}}
       Write-Host ${{ parameters.NamTestWebhook.component.group}}
