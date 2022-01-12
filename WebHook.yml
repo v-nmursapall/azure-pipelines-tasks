@@ -5,10 +5,10 @@ resources:
     connection: TestIncomingWebhook
 stages:
   - stage: TriggerInfo
-  jobs:
+    jobs:
     - job: job1
-    steps:
+      steps:
       Settings :
         - task: CmdLine@2
           inputs:
-          script: echo $(resources.triggeringCategory) $(resources.triggeringAlias)
+            script: echo $(resources.triggeringCategory) $(resources.triggeringAlias)
