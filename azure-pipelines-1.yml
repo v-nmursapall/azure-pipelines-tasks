@@ -13,5 +13,5 @@ steps:
     targetType: 'inline'
     ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
     script: |
-      Write-Host ${{ parameters.NamTestWebhook.v-nmursapall/azure-pipelines-tasks}}
+      Write-Host ${{ parameters.NamTestWebhook.v-nmursapall}}
       Write-Host ${{ parameters.NamTestWebhook.component.group}}
