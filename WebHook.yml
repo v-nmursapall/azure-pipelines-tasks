@@ -4,11 +4,11 @@ resources:
   - webhook: NamTestWebhook
     connection: TestIncomingWebhook
 stages:
-- stage: TriggerInfo
+  - stage: TriggerInfo
   jobs:
-  - job: job1
+    - job: job1
     steps:
-  Settings :
-  - task: CmdLine@2
-    inputs:
-      script: echo $(resources.triggeringCategory) $(resources.triggeringAlias)
+      Settings :
+        - task: CmdLine@2
+          inputs:
+          script: echo $(resources.triggeringCategory) $(resources.triggeringAlias)
