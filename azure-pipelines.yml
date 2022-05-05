@@ -10,7 +10,7 @@ steps:
   inputs:
     packageType: 'nuget'
     packageName: 'azure-pipelines-tasks/OctocatApp'
-    externalEndpoints: '5e7402df-cdc3-4f26-8e55-8be0d9a310fd'
+    externalEndpoints: '2c7f7068-85e6-4bec-90e2-a143b74d66c9'
     version: '1.0.0'
     downloadPath: '$(System.ArtifactsDirectory)'
     
