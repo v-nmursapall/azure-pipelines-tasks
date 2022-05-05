@@ -8,6 +8,9 @@ trigger: none
 steps:
 - task: DownloadGitHubNugetPackage@1
   inputs:
+    packageType: 'nuget'
     packageName: 'azure-pipelines-tasks/OctocatApp'
     externalEndpoints: '0173124b-8f85-444f-8381-f0033aa1736b'
     version: '1.0.0'
+    downloadPath: '$(System.ArtifactsDirectory)'
+    # Download an artifact with id 'cfe01b64-ded4-47b7-a569-2ac17cbcedbd' to $(System.ArtifactsDirectory)
